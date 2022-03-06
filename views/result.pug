@@ -1,0 +1,13 @@
+extends layout
+
+block layout-content
+    div.home-container
+        div.form-wrapper
+            h1 Response
+            code !{data}
+            a(href="/") Wróć
+            script.
+              const string = !{JSON.stringify(data)};
+              console.log(string)
+        div.footer autor: 
+            a(href="https://pl.linkedin.com/in/marek-folta%C5%84ski-a727aa144" target="_blank") Marek Foltański 
